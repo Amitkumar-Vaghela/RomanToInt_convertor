@@ -4,7 +4,7 @@ import java.util.Map;
 public class RomanToInteger {
     public static void main(String args[]) {
 
-        // Mapping Roman numerals to their integer values
+
         Map<Character, Integer> romanValues = new HashMap<>();
         romanValues.put('I', 1);
         romanValues.put('V', 5);
@@ -14,16 +14,14 @@ public class RomanToInteger {
         romanValues.put('D', 500);
         romanValues.put('M', 1000);
 
-        String input = "VII"; // Example input
-
+        String input = "VII";
         int preValue = 0;
         int result = 0;
 
-        // Iterate through the Roman numeral string from right to left
         for (int i = input.length() - 1; i >= 0; i--) {
             int currValue = romanValues.get(input.charAt(i));
 
-            // If current value is less than previous value, subtract it
+          
             if (currValue < preValue) {
                 result -= currValue;
             } else {
@@ -33,6 +31,6 @@ public class RomanToInteger {
             preValue = currValue;
         }
 
-        System.out.println("The integer value of " + input + " is: " + result); // Output
+        System.out.println("The integer value of " + input + " is: " + result);
     }
 }
