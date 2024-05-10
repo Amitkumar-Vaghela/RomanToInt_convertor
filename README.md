@@ -14,16 +14,3 @@ This program takes a Roman numeral as input and converts it into its integer equ
 4. Enter a Roman numeral when prompted.
 5. The program will output the corresponding integer value of the Roman numeral.
 
-## Example
-Suppose you input the Roman numeral "VII", the program will output:
-
-
-## Requirements
-- Java Development Kit (JDK) installed on your system.
-
-## Contributing
-Contributions are welcome! If you have any suggestions, improvements, or bug fixes, feel free to open an issue or submit a pull request.
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
